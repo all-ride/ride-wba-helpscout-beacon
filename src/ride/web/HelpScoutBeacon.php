@@ -7,12 +7,13 @@ use ride\library\event\Event;
 use ride\library\mvc\Response;
 use ride\library\mvc\view\HtmlView;
 use ride\library\i18n\I18n;
+use ride\library\security\SecurityManager;
 
 
 class HelpScoutBeacon  {
 
-    public function __construct(Response $response, I18n $i18n, Config $config) {
-
+    public function __construct(Response $response, I18n $i18n, Config $config, SecurityManager $securityManager) {
+        $this->securityManager = $securityManager;
         $this->config = $config;
         $this->response = $response;
         $this->I18n = $i18n;
@@ -21,7 +22,10 @@ class HelpScoutBeacon  {
 
     public function enqueueJavascript(Event $event) {
 
-        if(null === $this->config->get('helpscout.beacon.form.id')) {
+        $beaconKey = $this->config->get('helpscout.beacon.form.id');
+        $user = $this->securityManager->getUser();
+
+        if ( !($beaconKey && $user) ) {
             return;
         }
 

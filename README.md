@@ -1,3 +1,5 @@
+# Ride: Help Scout Beacon integration
+
 This module integrates integrates a Help Scout beacon in your website.
 
 More details on beacons, their funcionality and possible customization can be found [here (Help Scout developer portal)](http://developer.helpscout.net/beacons/).

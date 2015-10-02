@@ -38,7 +38,8 @@ class HelpScoutBeacon  {
                     o.config = {
                         docs: {enabled: 0, baseUrl: "' . $docsDomain . '"},
                         contact: {enabled: 1, formId: "' . $formId . '"},
-                        color: "#cacaca",
+                        icon: "question",
+                        color: "#2980B9",
                         translation: {
                             "searchLabel": "' . $translator->translate('beacon.searchLabel') . '",
                             "searchErrorLabel": "' . $translator->translate('beacon.searchErrorLabel') . '",

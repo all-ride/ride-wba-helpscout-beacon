@@ -1,0 +1,21 @@
+{
+    "beacon.searchLabel" : "",
+    "beacon.searchErrorLabel" : "",
+    "beacon.noResultsLabel" : "",
+    "beacon.contactLabel" : "",
+    "beacon.attachFileLabel" : "",
+    "beacon.attachFileError" : "",
+    "beacon.nameLabel" : "",
+    "beacon.nameError" : "",
+    "beacon.emailLabel" : "",
+    "beacon.emailError" : "",
+    "beacon.topicLabel" : "",
+    "beacon.topicError" : "",
+    "beacon.subjectLabel" : "",
+    "beacon.subjectError" : "",
+    "beacon.messageLabel" : "",
+    "beacon.messageError" : "",
+    "beacon.sendLabel" : "",
+    "beacon.contactSuccessLabel" : "",
+    "beacon.contactSuccessDescription" : ""
+}

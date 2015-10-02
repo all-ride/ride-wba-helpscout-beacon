@@ -11,15 +11,22 @@ use ride\library\i18n\I18n;
 
 class HelpScoutBeacon  {
 
-    public function __construct(Response $response, I18n $i18n) {
+    public function __construct(Response $response, I18n $i18n, Config $config) {
+
+        $this->config = $config;
         $this->response = $response;
         $this->I18n = $i18n;
+
     }
 
-    public function enqueueJavascript(Event $event, Config $config) {
+    public function enqueueJavascript(Event $event) {
 
-        $formId = $config->get('helpscout.beacon.form.id');
-        $docsDomain = 'http://' . $config->get('helpscout.beacon.subdomain') . '.helpscoutdocs.com';
+        if(null === $this->config->get('helpscout.beacon.form.id')) {
+            return;
+        }
+
+        $formId = $this->config->get('helpscout.beacon.form.id');
+        $docsDomain = 'http://' . $this->config->get('helpscout.beacon.subdomain') . '.helpscoutdocs.com';
         $translator = $this->I18n->getTranslator();
 
         $view = $this->response->getView();

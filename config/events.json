@@ -1,0 +1,9 @@
+{
+  "app.dispatch.post": [
+    {
+      "interface": "ride\\web\\HelpScoutBeacon",
+      "method": "enqueueJavascript",
+      "weight": 99
+    }
+  ]
+}

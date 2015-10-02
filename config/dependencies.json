@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        {
+            "class": "ride\\web\\HelpScoutBeacon",
+            "id": "enqueueJavascript"
+        }
+    ]
+}

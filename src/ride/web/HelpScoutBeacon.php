@@ -49,35 +49,39 @@ class HelpScoutBeacon  {
                     o.config = {
                         docs: {enabled: 0, baseUrl: "' . $docsDomain . '"},
                         contact: {enabled: 1, formId: "' . $formId . '"},
-                        icon: "question",
-                        color: "#2980B9",
-                        translation: {
-                            "searchLabel": "' . $translator->translate('beacon.searchLabel') . '",
-                            "searchErrorLabel": "' . $translator->translate('beacon.searchErrorLabel') . '",
-                            "noResultsLabel": "' . $translator->translate('beacon.noResultsLabel') . '",
-                            "contactLabel": "' . $translator->translate('beacon.contactLabel') . '",
-                            "attachFileLabel": "' . $translator->translate('beacon.attachFileLabel') . '",
-                            "attachFileError": "' . $translator->translate('beacon.attachFileError') . '",
-                            "nameLabel": "' . $translator->translate('beacon.nameLabel') . '",
-                            "nameError": "' . $translator->translate('beacon.nameError') . '",
-                            "emailLabel": "' . $translator->translate('beacon.emailLabel') . '",
-                            "emailError": "' . $translator->translate('beacon.emailError') . '",
-                            "topicLabel": "' . $translator->translate('beacon.topicLabel') . '",
-                            "topicError": "' . $translator->translate('beacon.topicError') . '",
-                            "subjectLabel": "' . $translator->translate('beacon.subjectLabel') . '",
-                            "subjectError": "' . $translator->translate('beacon.subjectError') . '",
-                            "messageLabel": "' . $translator->translate('beacon.messageLabel') . '",
-                            "messageError": "' . $translator->translate('beacon.messageError') . '",
-                            "sendLabel": "' . $translator->translate('beacon.sendLabel') . '",
-                            "contactSuccessLabel": "' . $translator->translate('beacon.contactSuccessLabel') . '",
-                            "contactSuccessDescription": "' . $translator->translate('beacon.contactSuccessDescription') . '",
-                        },
                     };
                 var r = e.getElementsByTagName("script")[0], c = e.createElement("script");
                 c.type = "text/javascript", c.async = !0, c.src = "https://djtflbt20bdde.cloudfront.net/",
                     r.parentNode.insertBefore(c, r)
             }(document, window.HSCW || {}, window.HS || {}
-            )); $(function() { ');
+            ));
+            HS.beacon.config({
+                icon: "question",
+                color: "#2980B9",
+                poweredBy: false,
+                attachments: true,
+                translation: {
+                    "searchLabel": "' . $translator->translate('beacon.searchLabel') . '",
+                    "searchErrorLabel": "' . $translator->translate('beacon.searchErrorLabel') . '",
+                    "noResultsLabel": "' . $translator->translate('beacon.noResultsLabel') . '",
+                    "contactLabel": "' . $translator->translate('beacon.contactLabel') . '",
+                    "attachFileLabel": "' . $translator->translate('beacon.attachFileLabel') . '",
+                    "attachFileError": "' . $translator->translate('beacon.attachFileError') . '",
+                    "nameLabel": "' . $translator->translate('beacon.nameLabel') . '",
+                    "nameError": "' . $translator->translate('beacon.nameError') . '",
+                    "emailLabel": "' . $translator->translate('beacon.emailLabel') . '",
+                    "emailError": "' . $translator->translate('beacon.emailError') . '",
+                    "topicLabel": "' . $translator->translate('beacon.topicLabel') . '",
+                    "topicError": "' . $translator->translate('beacon.topicError') . '",
+                    "subjectLabel": "' . $translator->translate('beacon.subjectLabel') . '",
+                    "subjectError": "' . $translator->translate('beacon.subjectError') . '",
+                    "messageLabel": "' . $translator->translate('beacon.messageLabel') . '",
+                    "messageError": "' . $translator->translate('beacon.messageError') . '",
+                    "sendLabel": "' . $translator->translate('beacon.sendLabel') . '",
+                    "contactSuccessLabel": "' . $translator->translate('beacon.contactSuccessLabel') . '",
+                    "contactSuccessDescription": "' . $translator->translate('beacon.contactSuccessDescription') . '",
+                },
+            }); $(function() { ');
         }
     }
 }

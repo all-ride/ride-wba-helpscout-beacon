@@ -17,5 +17,7 @@
     "beacon.messageError" : "Please enter a message",
     "beacon.sendLabel" : "Send",
     "beacon.contactSuccessLabel" : "Message sent!",
-    "beacon.contactSuccessDescription" : "Thanks for reaching out! Someone from our team will get back to you soon."
+    "beacon.contactSuccessDescription" : "Thanks for reaching out! Someone from our team will get back to you soon.",
+    "beacon.instructions": "Use this form to get in touch with the Statik support team. Enter your question bellow and add a screenshot if possible."
+
 }

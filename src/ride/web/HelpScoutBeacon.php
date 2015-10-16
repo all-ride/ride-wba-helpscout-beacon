@@ -60,6 +60,7 @@ class HelpScoutBeacon  {
                 color: "#2980B9",
                 poweredBy: false,
                 attachments: true,
+                instructions: "' . $translator->translate('beacon.instructions')  .'",
                 translation: {
                     "searchLabel": "' . $translator->translate('beacon.searchLabel') . '",
                     "searchErrorLabel": "' . $translator->translate('beacon.searchErrorLabel') . '",

@@ -17,6 +17,6 @@
     "beacon.messageError" : "Gelieve een bericht in te vullen",
     "beacon.sendLabel" : "Verzenden",
     "beacon.contactSuccessLabel" : "Bericht verzonden!",
-    "beacon.contactSuccessDescription" : "Bedankt voor je bericht, ons support team contacteerd je zo snel mogelijk.",
+    "beacon.contactSuccessDescription" : "We hebben je bericht ontvangen en bekijken je verzoek zo snel mogelijk! We houden je op de hoogte.",
     "beacon.instructions": "Via dit formulier kan je contact opnemen met het Statik support team. Stel hieronder je vraag en voeg indien mogelijk een screenshot toe."
 }

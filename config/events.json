@@ -1,9 +1,9 @@
 {
-  "app.taskbar.post": [
-    {
-      "interface": "ride\\web\\HelpScoutBeacon",
-      "method": "enqueueJavascript",
-      "weight": 99
-    }
-  ]
+    "app.taskbar.post": [
+        {
+            "interface": "ride\\service\\HelpScoutBeaconService",
+            "method": "handleEvent",
+            "weight": 99
+        }
+    ]
 }

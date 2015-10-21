@@ -1,1 +1,3 @@
+helpscout.beacon.color                 This hex value sets the theme for the Beacon. It is used for buttons, links and an icon. We recommend using a value that looks good with white text over it.
 helpscout.beacon.form.id               Form ID of the Beacon you want to include, available in your Help Scout settings.
+helpscout.beacon.icon                  Set the icon of the Beacon trigger button. Valid values are beacon, buoy, message, question or search.
